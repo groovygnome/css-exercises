@@ -1,14 +1,17 @@
 body,
 html {
-  height: 100%;
+ height: 100%;
   margin: 0;
 }
 
 .container {
+  display: grid;
+  grid-template: 16% 16% 49% 16% / 25% 74%; 
   text-align: center;
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+  gap: 15px;
 }
 
 .container div {
@@ -21,22 +24,27 @@ html {
 }
 
 .header {
+  grid-area: 1/1/2/3;
   background-color: #006157;
 }
 
 .sidebar {
+  grid-area: 2/1/4/2;
   background-color: #005B94;
 }
 
 .nav {
+  grid-area: 2/2/3/3;
   background-color: #642cde;
 }
 
 .article {
+  grid-area:3/2/4/3;
   background-color: #7E1DC3;
 }
 
 .footer {
+  grid-area:4/1/5/3;
   background-color: #393f4d;
 }
 
